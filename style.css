@@ -13,6 +13,7 @@ p {
 }
 
 
+
 article {
 
     max-width: 25%;
@@ -31,6 +32,8 @@ figure {
     justify-content: center;
 }
 
+
+
 .heading_1 {
 
     max-width: auto;
@@ -38,10 +41,39 @@ figure {
     display: flex;
     grid-row: 1;
     background-color: grey;
-    flex-direction: column;
-    flex-wrap: wrap;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+
+.heading_1 > p {
+
+    font-size: 20px;
+}
+
+
+
+.author_01 {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+   
+}
+
+.author_02 {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+
+.author_03 {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 
@@ -72,11 +104,18 @@ figure {
 
     grid-row: 3;
     background: -webkit-linear-gradient(270deg, rgba(138,138,144,1) 0%, rgba(247,248,249,0) 100%);
-display: flex;
+
  border-bottom-left-radius: 15px;
  border-bottom-right-radius: 15px;
+ display: flex;
+flex-wrap: wrap;
+
 }
 
+.bottomcard_01 > span {
+
+    align-self: center;
+}
 
 
 .bottomcard_02 {
@@ -84,19 +123,31 @@ display: flex;
     grid-row: 3;
     background: -webkit-linear-gradient(270deg, rgba(138,138,144,1) 0%, rgba(247,248,249,0) 100%);
 display: flex;
+flex-wrap: wrap;
+}
+
+.bottomcard_02 > span {
+
+    align-self: center;
 }
 
 .bottomcard_03 {
 
     grid-row: 3;
     background: -webkit-linear-gradient(270deg, rgba(138,138,144,1) 0%, rgba(247,248,249,0) 100%);
-display: flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bottomcard_03 > span {
+
+    align-self: center;
 }
 
 .circle_logo {
 
     background-color: aliceblue;
-    border-radius: 50%;
+    border-radius: 20px;
     padding: 1.5rem;
 }
 
@@ -118,4 +169,67 @@ display: flex;
 
     max-width: 100%;
     max-height: 100%;
+}
+
+@media screen and (max-width:1000px) and (orientation:portrait) {
+
+body {
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+   
+    
+}
+
+    .card01 {
+
+    max-width: 45%;
+    max-height: 50%;
+}
+
+.card02 {
+
+    max-width: 45%;
+    max-height: 50%;
+}
+
+.card03 {
+
+    max-width: 45%;
+    max-height: 50%;
+    align-self: flex-end;
+}
+    
+}
+
+@media screen and (max-width:700px) {
+
+    body {
+
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    article {
+
+        max-width: 40%;
+        max-height: 40%;
+    }
+
+    .bottomcard_01 > p {
+
+        font-size: 7px;
+    }
+
+    .bottomcard_02 > p {
+
+        font-size: 7px;
+    }
+
+    .bottomcard_03 > p {
+
+        font-size: 7px;
+    }
+    
 }
