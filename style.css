@@ -1,13 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height: 100vw;
 }
 
 p {
-    max-width: auto;
-    max-height: auto;
+   padding-left: 2rem;
+   padding-right: 2rem;
     border-bottom-left-radius: 15px;
  border-bottom-right-radius: 15px;
 }
@@ -16,8 +23,8 @@ p {
 
 article {
 
-    max-width: 25%;
-    max-height: 60%;
+    max-width: 30%;
+    max-height: 40%;
     display: grid;
     grid-template-rows: 10% 50% 40%;
     border: 1px solid transparent;
@@ -147,7 +154,7 @@ flex-wrap: wrap;
 .circle_logo {
 
     background-color: aliceblue;
-    border-radius: 20px;
+    border-radius: 50%;
     padding: 1.5rem;
 }
 
@@ -171,7 +178,7 @@ flex-wrap: wrap;
     max-height: 100%;
 }
 
-@media screen and (max-width:1000px) and (orientation:portrait) {
+@media screen and (max-width:768px) and (orientation:portrait) {
 
 body {
 
@@ -180,6 +187,10 @@ body {
     align-content: space-around;
    
     
+}
+
+p {
+    font-size: 8px;
 }
 
     .card01 {
@@ -203,18 +214,43 @@ body {
     
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:375px) {
 
     body {
 
         flex-direction: column;
         justify-content: space-around;
+        height: 100%;
+        gap: 5px;
     }
 
-    article {
+    p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .card01 {
 
         max-width: 40%;
         max-height: 40%;
+    }
+
+    .card02 {
+
+        max-width: 40%;
+        max-height: 40%;
+    }
+
+    .card03 {
+
+        max-width: 40%;
+        max-height: 40%;
+    }
+
+    .bottomcard_01 {
+
+        border-bottom-left-radius: none;
+        border-bottom-right-radius: none;
     }
 
     .bottomcard_01 > p {
@@ -231,5 +267,33 @@ body {
 
         font-size: 7px;
     }
+
+    .kitten_01 {
+
+        max-width: 100%;
+        max-height: 90%;
+    }
     
+
+        .kitten_02 {
+
+            max-width: 100%;
+            max-height: 90%;
+        }
+
+        .kitten_03 {
+
+            max-width: 100%;
+            max-height: 90%;
+        }
+
+    
+    .circle_logo {
+
+        padding: 5px;
+        height: 7px;
+        width: 7px;
+
+
+    }
 }
