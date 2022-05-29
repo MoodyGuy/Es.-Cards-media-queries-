@@ -160,8 +160,8 @@ flex-wrap: wrap;
 
 .kitten_01 {
 
-    max-width: 120%;
-    max-height: 100%;
+    max-width: 100%;
+    max-height: 105%;
     align-self: center;
     
 }
@@ -185,8 +185,15 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     align-content: space-around;
+    height: 100vh;
    
     
+}
+
+article {
+
+    max-height: 50%;
+    max-width: 50%;
 }
 
 p {
